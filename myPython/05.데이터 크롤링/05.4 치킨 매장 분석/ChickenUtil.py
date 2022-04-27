@@ -38,7 +38,7 @@ class ChickenStore:
         self.url = url
 
         # csv 파일에 들어갈 컬럼 헤더
-        self.mycolumns = ['brandName', 'store', 'sido', 'gungu', 'address', 'phone']
+        self.mycolumns = ['brand', 'store', 'sido', 'gungu', 'address', 'phone']
 
         if self.brandName != 'goobne':
             self.soup = self.get_request_url()
