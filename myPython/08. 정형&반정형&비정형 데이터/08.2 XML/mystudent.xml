@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<students>
+    <student>
+        <name>홍길동</name>
+        <국어>50</국어>
+        <수학>60</수학>
+        <영어>70</영어>
+    </student>
+    <student>
+        <name>김철수</name>
+        <국어>55</국어>
+        <수학>65</수학>
+        <영어>75</영어>
+    </student>
+    <student>
+        <name>박영희</name>
+        <국어>60</국어>
+        <수학>70</수학>
+        <영어>80</영어>
+    </student>
+</students>
