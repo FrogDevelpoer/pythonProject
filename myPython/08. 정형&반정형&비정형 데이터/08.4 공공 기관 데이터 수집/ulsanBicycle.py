@@ -22,6 +22,7 @@ def getBicycleData(pageNo, numOfRows):
     parameters += '&numOfRows=' + str(numOfRows)
 
     url = end_point + parameters
+    print(url)
 
     result = getRequestUrl(url)
     if result == None :
