@@ -1,3 +1,4 @@
+import matplotlib
 from keras.datasets import boston_housing
 
 (x_train, y_train), (x_test, y_test) = boston_housing.load_data()
@@ -96,6 +97,7 @@ val_loss = history.history['val_loss']
 
 import matplotlib.pyplot as plt
 plt.rc('font', family='Malgun Gothic')
+matplotlib.rcParams['axes.unicode_minus'] = False
 
 plt.figure()
 plt.plot(loss, 'b', label = 'training data loss', linestyle='solid', linewidth=1)
@@ -113,7 +115,7 @@ print(filename + ' 파일 저장')
 ##############################################################################
 
 print('실제 가격과 예측 가격의 산점도')
-prediction = model.predict(x_test & y_test)
+prediction = model.predict(x_test)
 
 plt.figure()
 plt.plot(y_test, prediction, 'b.')
