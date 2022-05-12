@@ -39,6 +39,8 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Conv2D(filters=64, kernel_size=(3, 3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
+model.add(Flatten())
+
 model.add(Dense(units=512, input_shape=(x_column,), activation='relu'))
 model.add(Dropout(0.5))
 
@@ -78,7 +80,7 @@ plt.xlabel('epoch')
 plt.ylabel('accuracy')
 plt.legend(['train', 'test'], loc='upper left')
 
-filename = '../ml03softmax/mnistNeuralNet06_01.png'
+filename = '../ml03softmax/mnistNeuralNet07_01.png'
 plt.savefig(filename)
 print(filename + ' 저장 완료')
 
@@ -91,6 +93,6 @@ plt.xlabel('epoch')
 plt.ylabel('loss')
 plt.legend(['train', 'test'], loc='upper left')
 
-filename = '../ml03softmax/mnistNeuralNet06_02.png'
+filename = '../ml03softmax/mnistNeuralNet07_02.png'
 plt.savefig(filename)
 print(filename + ' 저장 완료')

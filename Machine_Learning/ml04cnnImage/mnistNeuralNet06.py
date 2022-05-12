@@ -39,6 +39,8 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Conv2D(filters=64, kernel_size=(3, 3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 
+model.add(Flatten())
+
 model.add(Dense(units=512, input_shape=(x_column,), activation='relu'))
 model.add(Dense(units=512, activation='relu'))
 model.add(Dense(units=nb_classes, activation='softmax'))
